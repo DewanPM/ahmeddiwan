@@ -86,9 +86,30 @@
     padding-left: 20px; /* Optional padding for spacing */
 }
 </style>
+<style>
+.experience {
+    display: flex;
+    flex-direction: column;
+    margin: 20px 0; /* Adjust margin as needed */
+}
 
+.row {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start; /* Align items at the top */
+    margin: 10px 0; /* Space between rows */
+}
 
+.date {
+    text-align: right; /* Align dates to the right */
+    width: 200px; /* Set a fixed width for the date column */
+}
 
+.info {
+    flex: 1; /* Allow the info column to take remaining space */
+    padding-left: 20px; /* Optional padding for spacing */
+}
+</style>
     
 </head>
 
@@ -109,7 +130,7 @@
 
 
      <div class="section">
-        <h2>"Education"</h2>
+        <h2>Education</h2>
    <div class="education">
     <div class="row">
         <div class="date"><strong>Aug 2019– April 2022</strong></div>
@@ -125,30 +146,42 @@
         <div class="info">
             <strong>Faculty of Science, Zagazig University, Egypt</strong><br>
             B.Sc. in Microbiology and Chemistry | <strong>Overall grade:</strong> Very Good<br>
-            <strong>Graduation project title:</strong> Understanding the antimicrobial resistance. | <strong>Overall grade:</strong> Excellent<br>
+            <strong>Graduation project title:</strong> Understanding the antimicrobial resistance | <strong>Overall grade:</strong> Excellent<br>
            
         </div>
     </div>
 </div>
 
 
-
-    
     <div class="section">
-        <h2>Academic and Industrial Experience</h2>
-        
-        <p><strong style="text-decoration: underline;">Sep. 2023 - Present</strong></p>
-        <p><strong>Research Assistant <br></p>
-        <p>Anhui Agriculture University, Anhui, China</p>
+    <h2>Academic and Industrial Experience</h2>
 
-        <p><strong style="text-decoration: underline;">July 2020 - Sep. 2023</strong><br></p>
-        <p><strong>Microbiology Specialist <br></p>
-        <p>Global Pharmaceutical Industries, GPI, 6 October, Egypt</p>
+    <div class="experience">
+        <div class="row">
+            <div class="date"><strong style="text-decoration: underline;">Sep. 2023 - Present</strong></div>
+            <div class="info">
+                <strong>Research Assistant</strong><br>
+                Anhui Agriculture University, Anhui, China
+            </div>
+        </div>
 
-       <p><strong style="text-decoration: underline;">Feb. 2020 - July 2020</strong><br></p>
-        <p><strong>Food Microbiologist <br></p>
-        <p>Alfa Food Unit, 6 October, Egypt</p>
+        <div class="row">
+            <div class="date"><strong style="text-decoration: underline;">July 2020 - Sep. 2023</strong></div>
+            <div class="info">
+                <strong>Microbiology Specialist</strong><br>
+                Global Pharmaceutical Industries, GPI, 6 October, Egypt
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="date"><strong style="text-decoration: underline;">Feb. 2020 - July 2020</strong></div>
+            <div class="info">
+                <strong>Food Microbiologist</strong><br>
+                Alfa Food Unit, 6 October, Egypt
+            </div>
+        </div>
     </div>
+</div>
 
     <div class="section">
         <h2>Publications</h2>
