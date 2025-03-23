@@ -164,7 +164,26 @@
 } 
 </style>
 
+<style>
+    .row {
+        display: flex; /* Use flexbox for alignment */
+        align-items: flex-start; /* Align items at the start */
+    }
 
+    .date {
+        min-width: 150px; /* Set fixed width; adjust as necessary */
+        margin-right: 20px; /* Space between date and info */
+    }
+
+    .info {
+        flex-grow: 1; /* Allow info to take remaining space */
+    }
+
+    /* Optional: To control spacing at the bottom of each row */
+    .row {
+        margin-bottom: 15px; /* Adjust this value as needed */
+    }
+</style>
 
     
 </head>
