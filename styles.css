@@ -38,6 +38,12 @@ main {
     padding: 20px;
     background-color: white;
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+h1 {
+    margin: 0 0 10px;
+    font-size: 2.5em;
 }
 
 footer {
@@ -48,54 +54,4 @@ footer {
     position: fixed;
     bottom: 0;
     width: 100%;
-}
-
-#intro img {
-    max-width: 200px;
-    border-radius: 50%;
-}
-
-.post, .publication {
-    margin-bottom: 20px;
-}
-
-form {
-    display: flex;
-    flex-direction: column;
-}
-
-label {
-    margin: 10px 0 5px;
-}
-
-input, textarea {
-    padding: 8px;
-    margin-bottom: 10px;
-}
-
-button {
-    padding: 10px;
-    background-color: #333;
-    color: white;
-    border: none;
-    cursor: pointer;
-}
-
-button:hover {
-    background-color: #555;
-}
-
-/* Responsive Design */
-@media (max-width: 600px) {
-    nav ul {
-        flex-direction: column;
-        align-items: center;
-    }
-    nav ul li {
-        margin: 10px 0;
-    }
-    main {
-        margin: 10px;
-        padding: 10px;
-    }
 }
