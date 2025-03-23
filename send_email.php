@@ -21,3 +21,14 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     }
 }
 ?>
+
+<?php
+error_reporting(E_ALL);
+ini_set('display_errors', 1);
+
+header('Content-Type: application/json');  // Set content type to JSON
+
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    // Your existing code goes here
+}
+?>
