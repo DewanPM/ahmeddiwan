@@ -1,6 +1,6 @@
 <?php
 header('Content-Type: application/json');  // Set content type to JSON
-
+<form id="contact-form" action="send_email.php" method="POST">
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $name = htmlspecialchars(trim($_POST['name']));
     $email = htmlspecialchars(trim($_POST['email']));
