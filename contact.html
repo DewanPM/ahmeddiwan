@@ -27,8 +27,10 @@
             margin: 0;
             padding: 0;
             display: flex;
-            flex-direction: column;
+             justify-content: center; /* Center the contact section horizontally */
+            align-items: center; /* Center the contact section vertically */
             min-height: 100vh; /* Ensures footer stays at the bottom */
+             text-align: center; /* Center text */
         }
 
       footer {
@@ -45,10 +47,12 @@
             font-size: 18px;
             color: #333;
         }
-       .contact-section h2 + h2 {
-            margin-top: 100px; /* Space between two sections */
+      .contact-section h2:nth-of-type(1) {
+            margin-bottom: 100px; /* Space below Professional Enquiries */
         }
-
+         .contact-section {
+            text-align: center; /* Center text within this section */
+        }
         .email {
             color: #e63946; /* Email color */
             text-decoration: none;
@@ -56,7 +60,7 @@
 
         .social-icons {
             display: flex;
-            justify-content: left; /* Center icons */
+            justify-content: center; /* Center icons */
             margin-top: 10px;
         }
 
@@ -74,15 +78,6 @@
     <div class="contact-section">
         <h2>Professional Enquiries</h2>
         <a href="mailto:ahmeddewan1995@gmail.com" class="email">ahmeddewan1995@gmail.com</a>
-        
-    </div>
-
-
-    
-
-</head>
-<body>
-    <div class="contact-section">
       
         
         <h2>Follow Me</h2>
@@ -94,7 +89,7 @@
             <a href="https://www.youtube.com/@Ahmed_Dewan/" target="_blank"><img src="youtube.png" alt="YouTube"></a>
         </div>
     </div>
-
+<body>
 
 
 
