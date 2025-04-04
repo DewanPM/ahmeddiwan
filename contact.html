@@ -21,51 +21,50 @@
         </nav>
     </header>
 
- <style>
+  <style>
         body {
-            font-family: Times and Roman, sans-serif;
+            font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
             display: flex;
-            min-height: 100vh; /* Ensures footer stays at the bottom */
-             
+            justify-content: center; /* Center horizontally */
+            align-items: center; /* Center vertically */
+            flex-direction: column; /* Arrange items in a column */
+            height: 100vh; /* Full viewport height */
+            text-align: center; /* Center text */
         }
 
-      footer {
-    text-align: center;
-    padding: 10px 0;
-    background-color: #333;
-    color: white;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-}
-        .contact-section h2 {
-            margin: 10px 0;
-            font-size: 18px;
-            color: #333;
-        }
-    
-         .contact-section {
+        .contact-section {
             text-align: center; /* Center text within this section */
         }
+
+        .contact-section h2 {
+            margin: 10px 0; /* Existing margin */
+        }
+
+        .contact-section h2:nth-of-type(1) {
+            margin-bottom: 30px; /* Space below Professional Enquiries */
+        }
+
         .email {
             color: #e63946; /* Email color */
             text-decoration: none;
+            display: block; /* Ensures email is on its own line */
+            margin-bottom: 20px; /* Space below the email */
         }
 
         .social-icons {
             display: flex;
-            justify-content: center; /* Center icons */
-            margin-top: 10px;
+            justify-content: center; /* Center the icons */
+            margin-top: 10px; /* Space above icons */
         }
 
         .social-icons a {
-            margin: 0 10px;
+            margin: 0 10px; /* Space between icons */
         }
 
         .social-icons img {
-            width: 30px; /* Adjust icon size */
+            width: 25px; /* Adjust icon size */
             height: auto; /* Maintain aspect ratio */
         }
     </style>
