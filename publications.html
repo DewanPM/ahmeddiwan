@@ -55,34 +55,64 @@ a:hover {
     text-decoration: underline;
 }
 </style>
-    
-    <script>
-        // Fetch the JSON data
-        fetch('data.json')
-            .then(response => {
-                if (!response.ok) {
-                    throw new Error('Network response was not ok');
-                }
-                return response.json();
-            })
-            .then(data => {
-                const publicationsDiv = document.getElementById('publications');
-                data.forEach(pub => {
-                    const publication = `
-                        <div class="publication">
-                            <h3>${pub.title}</h3>
-                            <p><strong>Authors:</strong> ${pub.authors.join(', ')}</p>
-                            <p><em>${pub.year}</em></p>
-                            <p>Abstract: ${pub.abstract}</p>
-                            <p>DOI: <a href="${pub.doi}" target="_blank">${pub.doi}</a></p>
-                        </div>
-                    `;
-                    publicationsDiv.innerHTML += publication;
-                });
-            })
-            .catch(error => console.error('Error fetching the JSON data:', error));
-    </script>
 
+    
+<body>
+    <div class="publications-section" id="publications"></div>    
+    <script>
+       const publications = [
+            {
+                "paper_type": "Article",
+                "title": "(1) New Class of Thienopyridines: Design, Synthesis, Antimicrobial Activity and Molecular Docking",
+                "date": "February 2025",
+                "journal": "Journal of Molecular Structure",
+                "description": "This study aims to synthesis new class of Thienopyridines in addition to investigate its antimicrobial effects on pathogenic bacteria and fungus. Besides the antimicrobial effects, we did the Molecular docking.",
+                "link": "https://doi.org/10.1016/j.molstruc.2024.140741",
+                "image_source": "https://ars.els-cdn.com/content/image/1-s2.0-S0022286024032496-ga1_lrg.jpg"
+            },
+            {
+                "paper_type": "Article",
+                "title": "(2) Rational Design of New Thienopyridine Heterocycles Tethering Thiophene Moiety as Antimicrobial Agents: Synthesis and Computational Biology Study",
+                "date": "2025",
+                "journal": "Submitted and Under Review",
+                "description": "The objective of the proposed work is investigation the molecular and antimicrobial effect of the synthesized chemical compounds.",
+                "link": "#"
+            },
+            {
+                "paper_type": "Review Article",
+                "title": "(3) A Review: The Role of Gut Microbiota and Fusobacterium Nucleatum in Colorectal Cancer (CRC)",
+                "date": "2025",
+                "journal": "Submitted and Under Review",
+                "description": "This review investigates the role of microbiota in CRC.",
+                "link": "#"
+            },
+            {
+                "paper_type": "Review Article",
+                "title": "(4) Bacteriophage Therapy in Aquaculture: A Promising Solution for Disease Management",
+                "date": "2025",
+                "journal": "Submitted and Under Review",
+                "description": "This review discusses the danger of aquaculture diseases and the usage of bacteriophages on it.",
+                "link": "#"
+            }
+        ];
+
+        const publicationsDiv = document.getElementById('publications');
+        publications.forEach(pub => {
+            const publicationHTML = `
+                <div class="publication">
+                    <h3>${pub.title}</h3>
+                    <p><strong>Type:</strong> ${pub.paper_type}</p>
+                    <p><strong>Date:</strong> ${pub.date}</p>
+                    <p><strong>Journal:</strong> ${pub.journal}</p>
+                    <p>${pub.description}</p>
+                    ${pub.image_source ? `<img src="${pub.image_source}" alt="Publication Image" class="publication-image">` : ''}
+                    <p>DOI: <a href="${pub.link}" target="_blank">${pub.link}</a></p>
+                </div>
+            `;
+            publicationsDiv.innerHTML += publicationHTML;
+        });
+    </script>
+<body>
     <footer>
         <p>© 2025 Ahmed Dewan. All rights reserved.</p>
     </footer>
