@@ -1,0 +1,35 @@
+[
+    {
+        "paper_type":"Article",
+        "title": "(1) New Class of Thienopyridines: Design, Synthesis, Antimicrobial Activity and Molecular Docking",
+        "date": "February 2025",
+        "journal": "Journal of Molecular Structure",
+        "description": "This study aims to synthesis new class of Thienopyridines in addition to investigate its antimicrobial effects on pathogenic bacteria and fungus. Besides the antimicrobial effects, we did the Molecular docking ",
+        "link": "https://doi.org/10.1016/j.molstruc.2024.140741",
+        "image_soruce":"https://ars.els-cdn.com/content/image/1-s2.0-S0022286024032496-ga1_lrg.jpg"
+    },
+    {
+        "paper_type": "Article",
+        "title": "(2) Rational Design of New Thienopyridine Heterocycles Tethering Thiophene Moiety as Antimicrobial Agents: Synthesis and Computational Biology Study",
+        "date": "2025",
+        "journal": " submitted and Under review status",
+        "description": "The objective of the proposed work is investigation the molecular and antimicrobial effect of the synthesized chemical compounds ",
+        
+    },
+    {
+        "paper_type": "Revie Article",
+        "title": "(3) A review: The role of Gut microbiota and Fusobacterium nucleatum in colorectal cancer (CRC) ",
+        "date": "2025",
+        "journal": "submitted and Under review status",
+        "description": "This review investigates the role of microbiota in CRC",
+       
+    },
+    {
+        "paper_type": "Revie Article",
+        "title": "(4) Bacteriophage Therapy in Aquaculture: A Promising Solution for Disease Management",
+        "date": "2025",
+        "journal": "submitted and Under review status",
+        "description": "This review discusses the danger of aquaculture diseases and the usage of bacteriophages on it",
+        
+    }
+]
