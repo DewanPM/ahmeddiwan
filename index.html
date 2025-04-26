@@ -6,6 +6,41 @@
     <link rel="stylesheet" href="styles.css">
     <title>Welcome to My Personal Website</title>
      <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9; /* Light background color */
+            color: #333; /* Dark text color */
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            text-align: center; /* Center text */
+        }
+        h1 {
+            font-size: 3em; /* Large heading */
+            margin-bottom: 0.5em;
+        }
+        .profile-container {
+            display: flex;
+            align-items: center;
+            background-color: #ffffff; /* White background for the profile section */
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow effect */
+        }
+        .profile-container img {
+            border-radius: 50%; /* Circular image */
+            width: 150px; /* Size of the image */
+            height: 150px; /* Size of the image */
+            margin-right: 20px; /* Space between image and text */
+        }
+        .highlight {
+            color: #ffcc00; /* Highlight color for important text */
+            font-weight: bold; /* Bold text */
+        }
+    
         .profile-container {
             display: flex;
             align-items: center;
@@ -34,17 +69,17 @@
     </header>
 
 
-<main>
-    <h1>Welcome to My Personal Website</h1>
-</main>    
-<hr>
-
-
-    <main>
+  <main class="container">
+        <h1>Hello</h1>
         <div class="profile-container">
             <img src="personal photo.jpg" alt="Ahmed Dewan">
-        <p>Hi, I'm Ahmed Dewan,a Research Fellow at Anhui Agriculture University | China. 
-            Over 5 years of progressive experience in both academic research and the pharmaceutical industry with a master's degree in microbiology. </p> 
+            <div>
+        <p>Hi, I'm Ahmed Dewan,a Research Fellow at Anhui Agriculture University | China. <p>
+         <p>I’m a purpose-driven scientist and researcher. I believe that the study and application of <span class="highlight">microbiology and molecular biology </span> will lead to innovative solutions 
+             for addressing <span class="highlight">global health challenges.</span>
+            <p> My research interest focuses on the infectious diseases and lactic acid bacteria to improve public health outcomes.<p>   
+    </div>
+        </div>
     </main>
 
     <footer>
